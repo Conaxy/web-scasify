@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.gradient-bg {
+    background: linear-gradient(
+            45deg, #2937f0, #9f1ae2) !important;
+}
+
+.indexpage {
+    background-image: url("https://media.discordapp.net/attachments/888339539020619777/902984343037837362/homescreenbg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+html, body, #___gatsby, #___gatsby>div, .indexpage {
+    height: 100%;
+}
+
+.row {
+    height: inherit;
+}
+
+
+/* Landingpage */
+
+.indexpage .landing-logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.indexpage h1, .indexpage h2 {
+    color: #fff;
+}
+
+.indexpage .rounded-btn {
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.rounded-btn:hover {
+    text-decoration: none;
+    color: inherit;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
