@@ -19,7 +19,7 @@ html, body, #___gatsby, #___gatsby>div, .indexpage {
     height: 100%;
 }
 
-.row {
+.indexpage .row {
     height: inherit;
 }
 
@@ -53,4 +53,49 @@ html, body, #___gatsby, #___gatsby>div, .indexpage {
     color: inherit;
     background-color: #ffffff;
     transition: all 0.3s ease-in-out;
+}
+
+/* Home */
+.page, .home {
+    background-color: #121212;
+    height: 100%;
+    padding-top: 25px;
+}
+
+.page .row {
+    height: 85%;
+}
+
+.homeContainer {
+    height: 85%;
+}
+
+.sideNav {
+    margin-left: 50px;
+}
+
+.financeBar {
+    margin-right: 50px;
+}
+
+.sideNav, .feed, .financeBar {
+    background-color: #15181C;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.feedItem {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.authorImage {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.feed {
+    color: #ffffff;
+    margin-left: 20px;
 }
