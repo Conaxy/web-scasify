@@ -6,7 +6,7 @@ import {Image} from "react-bootstrap";
 
 const SideNavItem = (props) => {
     return (
-        <li>
+        <li className={"sideNavItem"}>
             <Link to={props.URL}>
                 <Image src={props.IconURL} className={"sideNavIcon"}/>
                 <span>{props.Title}</span>

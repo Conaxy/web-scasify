@@ -4,8 +4,6 @@ import {Container, Form} from "react-bootstrap";
 import {Row} from "react-bootstrap";
 import {Col} from "react-bootstrap";
 import '../style/Main.css';
-import {Image} from "react-bootstrap";
-import {Button} from "bootstrap";
 import {Link} from "gatsby";
 
 // markup

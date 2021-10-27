@@ -10,14 +10,17 @@ const FeedItem = (props) => {
         <>
             <div className={"feedItem"}>
                 <Container>
-                    <Row>
+                    <Row className={"feedItem_information"}>
                         <Col lg={1} md={1}>
                             <Image src={props.AuthorPFP} className={"authorImage"}/>
                         </Col>
                         <Col lg={10} md={10}>
-                            <span>{props.Description}</span>
+                            <span className={"font-weight-bold"}>{props.Author}</span>
+                            <br/>
+                            <span>{props.CreatedAt}</span>
                         </Col>
                     </Row>
+                    <span>{props.Description}</span>
                     {props.SharedFinance ?
                         <FinanceGraph finance={props.SharedFinance}/>
                         : null}
