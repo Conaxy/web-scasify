@@ -32,13 +32,13 @@ html, body, #___gatsby, #___gatsby>div, .indexpage {
     display: block;
 }
 
-.indexpage h1, .indexpage h2 {
+.indexpage h1, .indexpage h4 {
     color: #fff;
 }
 
 .indexpage .rounded-btn {
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 75px;
+    padding-left: 75px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-transform: uppercase;

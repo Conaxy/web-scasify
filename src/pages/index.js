@@ -12,14 +12,14 @@ import {Link} from "gatsby";
 const IndexPage = () => {
     return (
         <>
-            <Container fluid className={" indexpage"}>
+            <Container fluid className={" indexpage text-center"}>
                 <Row>
-                    <Col lg={9}></Col>
-                    <Col lg={3} md={6} sm={6} className={" align-items-center justify-content-center gradient-bg "}>
+                    <Col lg={8}></Col>
+                    <Col lg={4} md={6} sm={6} className={" align-items-center justify-content-center gradient-bg "}>
                         <img src={"https://www.scasify.com/assets/img/conaxywhite.png"}
                              className={"img-fluid w-75 text-center landing-logo"}/>
-                        <h1> Stop waiting, start trading. </h1>
-                        <h2>Register now, @ scasify.</h2>
+                        <h1 className={"mb-5"}> Stop waiting, start trading. </h1>
+                        <h4>Start trading efficiently, connect with people from all around the world & exchange information.</h4>
                         <div className={"text-center mt-5"}>
                             <Link className={"rounded-btn text-center"} to={"/login"}> Register </Link>
                         </div>
