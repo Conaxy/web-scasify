@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
 
+::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background: #B3AFB3;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #B3AFB3;
+}
+::-webkit-scrollbar-track{
+    background: #F0F0F0;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+
 body {
-    overflow: hidden;
     font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -62,7 +78,7 @@ html, body, #___gatsby, #___gatsby > div, .indexpage {
     height: 100%;
 }
 
-.page .row {
+.page .row:not(.storyboard) {
     height: 65%;
 }
 
@@ -77,7 +93,7 @@ html, body, #___gatsby, #___gatsby > div, .indexpage {
     height: 100%;
 }
 
-.sideNav, .feed, .financeBar {
+.sideNav, .feed, .financeBar, .storyboard {
     background-color: #15181C;
     border-radius: 25px;
     padding: 25px;
@@ -89,8 +105,21 @@ html, body, #___gatsby, #___gatsby > div, .indexpage {
 }
 
 .feedItem {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.navText {
+    color: #B4B2B2;
+    font-weight: bold;
+}
+
+.sideNavItem > a:hover {
+    text-decoration: none;
+}
+
+.sideNavItem > a:hover > .navText {
+    color: rgb(0, 123, 255);
 }
 
 .authorImage {
@@ -103,9 +132,36 @@ html, body, #___gatsby, #___gatsby > div, .indexpage {
     margin-bottom: 15px;
 }
 
+.fixed-header {
+    color: #B4B2B2;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.sideNavIcon {
+    margin-right: 10px;
+}
+
 .feed {
-    overflow-y: auto;
     color: #ffffff;
     margin-right: 35px;
     margin-left: 35px;
+}
+
+.feedItems {
+    max-height: 275px;
+    overflow-y: auto;
+}
+
+
+.storyboard {
+    margin-bottom: 15px;
+    margin-right: 35px;
+    margin-left: 35px;
+
+    padding: 15px;
+}
+.storyAuthor {
+    margin-top: 7px;
+    color: #B4B2B2;
 }

@@ -8,8 +8,8 @@ const SideNavItem = (props) => {
     return (
         <li className={"sideNavItem"}>
             <Link to={props.URL}>
-                <Image src={props.IconURL} className={"sideNavIcon"}/>
-                <span>{props.Title}</span>
+                <Image src={props.IconURL} className={"sideNavIcon"} width={25} height={25}/>
+                <span className={"navText"}>{props.Title}</span>
             </Link>
         </li>
     )

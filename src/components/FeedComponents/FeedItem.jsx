@@ -15,9 +15,9 @@ const FeedItem = (props) => {
                             <Image src={props.AuthorPFP} className={"authorImage"}/>
                         </Col>
                         <Col lg={10} md={10}>
-                            <span className={"font-weight-bold"}>{props.Author}</span>
+                            <span className={"feedItem_Author font-weight-bold"}>{props.Author}</span>
                             <br/>
-                            <span>{props.CreatedAt}</span>
+                            <span className={""}>{props.CreatedAt}</span>
                         </Col>
                     </Row>
                     <span>{props.Description}</span>
