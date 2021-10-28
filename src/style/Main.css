@@ -75,7 +75,7 @@ html, body, #___gatsby, #___gatsby > div, .indexpage {
 /* Home */
 .page, .home {
     background-color: #121212;
-    height: 100%;
+    height: calc(100% + 30px);
 }
 
 .page .row:not(.storyboard) {
@@ -83,6 +83,7 @@ html, body, #___gatsby, #___gatsby > div, .indexpage {
 }
 
 .mainlogo {
+    margin-top: -60px;
     display: flex;
     text-align: center;
     margin-right: auto;
@@ -93,10 +94,16 @@ html, body, #___gatsby, #___gatsby > div, .indexpage {
     height: 100%;
 }
 
-.sideNav, .feed, .financeBar, .storyboard {
+.sideNav, .financeBar, .storyboard {
     background-color: #15181C;
     border-radius: 25px;
     padding: 25px;
+}
+
+.feed {
+    background-color: #15181C;
+    border-radius: 25px;
+    padding: 18px;
 }
 
 .sideNavItem {
@@ -119,7 +126,12 @@ html, body, #___gatsby, #___gatsby > div, .indexpage {
 }
 
 .sideNavItem > a:hover > .navText {
-    color: rgb(0, 123, 255);
+    color: #2937f0;
+    transition: all 0.3s ease-in-out;
+}
+
+.sideNavItem > a > .navText {
+    transition: all 0.3s ease-in-out;
 }
 
 .authorImage {
@@ -149,7 +161,7 @@ html, body, #___gatsby, #___gatsby > div, .indexpage {
 }
 
 .feedItems {
-    max-height: 275px;
+    max-height: 315px;
     overflow-y: auto;
 }
 
@@ -158,7 +170,6 @@ html, body, #___gatsby, #___gatsby > div, .indexpage {
     margin-bottom: 15px;
     margin-right: 35px;
     margin-left: 35px;
-
     padding: 15px;
 }
 .storyAuthor {

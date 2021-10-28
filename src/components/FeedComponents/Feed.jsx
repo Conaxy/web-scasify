@@ -34,6 +34,9 @@ const Feed = () => {
                         <FeedItem Description={"Johannes ist der beste!"}
                                   AuthorPFP={"https://cdn.discordapp.com/avatars/252834134811082753/72a6271d53c83437b70c24eacc2e1ee6.webp?size=48"}
                                   Author={"Cedric"} SharedFinance={"Bitcoin"} CreatedAt={"28. Oktober 2021"}/>
+                        <FeedItem Description={"Johannes ist der beste!"}
+                                  AuthorPFP={"https://cdn.discordapp.com/avatars/252834134811082753/72a6271d53c83437b70c24eacc2e1ee6.webp?size=48"}
+                                  Author={"Cedric"} SharedFinance={"Bitcoin"} CreatedAt={"28. Oktober 2021"}/>
                     </div>
                 </div>
             </Col>
