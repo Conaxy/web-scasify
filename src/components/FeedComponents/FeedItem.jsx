@@ -17,7 +17,7 @@ const FeedItem = (props) => {
                         <Col lg={10} md={10}>
                             <span className={"feedItem_Author font-weight-bold"}>{props.Author}</span>
                             <br/>
-                            <span className={""}>{props.CreatedAt}</span>
+                            <span className={"feedItem_CreatedAt"}>{props.CreatedAt}</span>
                         </Col>
                     </Row>
                     <span>{props.Description}</span>
