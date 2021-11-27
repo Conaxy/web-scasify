@@ -1,4 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background: #B3AFB3;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #B3AFB3;
+}
+::-webkit-scrollbar-track{
+    background: #F0F0F0;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
 
 body {
     font-family: 'Red Hat Display', sans-serif;
@@ -15,11 +32,11 @@ body {
     background-size: 100% 100%;
 }
 
-html, body, #___gatsby, #___gatsby>div, .indexpage {
+html, body, #___gatsby, #___gatsby > div, .indexpage {
     height: 100%;
 }
 
-.row {
+.indexpage .row {
     height: inherit;
 }
 
@@ -32,13 +49,13 @@ html, body, #___gatsby, #___gatsby>div, .indexpage {
     display: block;
 }
 
-.indexpage h1, .indexpage h2 {
+.indexpage h1, .indexpage h4 {
     color: #fff;
 }
 
 .indexpage .rounded-btn {
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 75px;
+    padding-left: 75px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -53,4 +70,109 @@ html, body, #___gatsby, #___gatsby>div, .indexpage {
     color: inherit;
     background-color: #ffffff;
     transition: all 0.3s ease-in-out;
+}
+
+/* Home */
+.page, .home {
+    background-color: #121212;
+    height: calc(100% + 30px);
+}
+
+.page .row:not(.storyboard) {
+    height: 65%;
+}
+
+.mainlogo {
+    margin-top: -60px;
+    display: flex;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.homeContainer {
+    height: 100%;
+}
+
+.sideNav, .financeBar, .storyboard {
+    background-color: #15181C;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.feed {
+    background-color: #15181C;
+    border-radius: 25px;
+    padding: 18px;
+}
+
+.sideNavItem {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.feedItem {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.navText {
+    color: #B4B2B2;
+    font-weight: bold;
+}
+
+.sideNavItem > a:hover {
+    text-decoration: none;
+}
+
+.sideNavItem > a:hover > .navText {
+    color: #2937f0;
+    transition: all 0.3s ease-in-out;
+}
+
+.sideNavItem > a > .navText {
+    transition: all 0.3s ease-in-out;
+}
+
+.authorImage {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.feedItem_information {
+    margin-bottom: 15px;
+}
+
+.fixed-header {
+    color: #B4B2B2;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.sideNavIcon {
+    margin-right: 10px;
+}
+
+.feed {
+    color: #ffffff;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.feedItems {
+    max-height: 315px;
+    overflow-y: auto;
+}
+
+
+.storyboard {
+    margin-bottom: 15px;
+    margin-right: 35px;
+    margin-left: 35px;
+    padding: 15px;
+}
+.storyAuthor {
+    margin-top: 7px;
+    color: #B4B2B2;
 }
